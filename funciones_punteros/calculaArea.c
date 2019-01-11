@@ -1,7 +1,13 @@
 #include<stdio.h>
 
+void altura (double *b, double *a){
+	printf("Resultado: %lf\n", (b * a / 2));
+	return ;
+}
 
-void altura (){
+
+int main(){
+
 	double base;
 	double altura;
 
@@ -10,14 +16,6 @@ void altura (){
 	printf("Altura: ");
 	scanf("%lf",&altura);
 
-	printf("Resultado: %lf\n", (base * altura / 2));
-	return ;
-}
-
-
-int main(){
-
-	altura();
-
+	altura(base, altura);
 	return 0;
 }
