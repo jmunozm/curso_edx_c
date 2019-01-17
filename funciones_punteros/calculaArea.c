@@ -1,21 +1,27 @@
 #include<stdio.h>
 
-void altura (double *b, double *a){
-	printf("Resultado: %lf\n", (b * a / 2));
-	return ;
+double calculaArea(double b, double a){
+	
+	double altura;
+	altura = (b * a / 2);
+	
+	return altura;
 }
+
 
 
 int main(){
 
 	double base;
 	double altura;
+	double area;
 
 	printf("Base: ");
 	scanf("%lf",&base);
 	printf("Altura: ");
 	scanf("%lf",&altura);
 
-	altura(base, altura);
+	area = calculaArea(base, altura);
+	printf("Resultado: %.2lf\n", area);
 	return 0;
 }
