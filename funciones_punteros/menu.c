@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+//Creado por Juan Munoz
+
 void menu(){
 	printf("Menú\n 1. Empezar partida\n 2. Ajustes\n 3. Ayuda\n 4. Salir\n");
 	printf("Selecciona una opción:\n ");
